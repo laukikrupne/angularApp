@@ -9,9 +9,9 @@
   class="form-control"
   [(ngModel)]="serverName"
 >
-<p>
+<!--<p>
   {{serverName}}
-</p>
+</p>-->
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
@@ -21,4 +21,6 @@
 <p>{{ serverCreationStatus }}</p>
 <app-server></app-server>
 <app-server></app-server>
+<app-assignment></app-assignment>
+
 
