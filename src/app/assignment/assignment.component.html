@@ -1,0 +1,17 @@
+<button
+  class="btn btn-primary"
+  (click)="revertDisplayPassword()"
+>Display Details</button>
+<p
+  *ngIf="displayPassword"
+>
+  Secret Password = tuna
+</p>
+<div
+  *ngFor="let number of log; let i = index"
+  [ngStyle]="{backgroundColor: i >= 5 ? 'blue': 'transparent'}"
+  [ngClass]="{'white-text': i>=5}"
+>{{ number }}</div>
+
+
+
